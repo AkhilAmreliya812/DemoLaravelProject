@@ -7,5 +7,6 @@
 </head>
 <body>
     <h1>User {{$name}}</h1>
+    <a href="/">Back</a>
 </body>
 </html>

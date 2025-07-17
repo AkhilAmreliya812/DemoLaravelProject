@@ -42,5 +42,6 @@
             <button type="submit">Submit</button>
         </div>
     </form>
+    <a href="/">Back</a>
 </body>
 </html>

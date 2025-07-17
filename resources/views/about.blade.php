@@ -9,5 +9,6 @@
     <h2>About user</h2>
 
     <h2>Hello i am {{$name}}</h2>
+    <a href="/">Back</a>
 </body>
 </html>
