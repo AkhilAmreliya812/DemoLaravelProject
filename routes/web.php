@@ -7,7 +7,7 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\AgeCheck;   
 use App\Http\Middleware\CountryCheck;
-
+use App\Http\Controllers\EmployeeController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -53,4 +53,10 @@ Route::prefix('student')->group(function () {
         
     }); 
 });
+
+Route::prefix('employee')->group(function () {
+    Route::get('/add', [EmployeeController::class, 'addEmployee'])->name('addEmployee');
+    Route::post('/store', [EmployeeController::class, 'storeEmployee'])->name('storeEmployee');
+});
+
 

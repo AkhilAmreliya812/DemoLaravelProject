@@ -26,5 +26,9 @@
 
     <h4>Delete Student</h4>
     <a href="{{ route('deleteStudent')}}">Delete Stdent</a>
+
+    <h2>This part is only for validation</h2>
+    <h3>Add Employee</h3>
+    <a href="{{ route('addEmployee')}}">Add Employee</a>
 </body>
 </html>
